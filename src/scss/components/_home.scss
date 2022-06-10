@@ -1,0 +1,45 @@
+@use './mixins';
+
+.home {
+	width: 90%;
+	margin: auto;
+	@include mixins.main();
+	justify-content: center;
+	gap: 4rem; 
+	&__body {
+		width: 100%;
+	}
+}
+
+.about-me {
+	@include mixins.flex-row(3, 16, space-evenly);
+	&::before {
+		margin: 2rem 0;
+		width: 99vw;
+		height: 1px;
+		top: 0; 
+		content: '';
+		background-color: var(--scrollColor);
+	}
+	& div {
+		min-width: 25vw; 
+	}
+	& * {
+		text-align: center;
+	}
+	@media screen and (max-width: 1024px) {
+		@include mixins.flex-column(center, center, 16);
+	}
+}
+
+.presentation {
+	@include mixins.container();
+	gap: 2rem;
+	&__title {
+		margin: 0 0 0rem 4rem;
+	}
+	&__content {
+		padding: 0 0.5rem; 
+		gap: 1rem;
+	}
+}

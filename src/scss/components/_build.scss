@@ -1,0 +1,25 @@
+@use './mixins';
+
+.build {
+	@include mixins.flex-row(0, 0, space-around);
+	&__logo {
+		min-width: 300px;
+		height: 400px;
+		// background-image: url('../svg/build.svg');
+		// background-repeat: no-repeat;
+		// background-size: cover;
+		// background-position: left;
+		// background-attachment: fixed;
+	}
+	&__text {
+		height: 400px;
+		justify-content: space-around;
+		align-items: center;
+		min-width: 150px;
+		text-align: center;
+		& span {
+			font-size: xx-large;
+			font-weight: 600;
+		}
+	}
+}

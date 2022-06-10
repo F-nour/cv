@@ -1,0 +1,127 @@
+@mixin flex-column($content: center, $items: center, $gap: 0) {
+	display: flex;
+	flex-direction: column;
+	justify-content: $content;
+	align-items: $items;
+	gap: #{$gap}px;
+}
+
+@mixin flex-row($size: 0, $gap: 0, $content) {
+	@if $size == 0 {
+		flex: 1 0;
+	} @else {
+		flex: 1 calc((100 / $size) - $gap);
+	}
+	display: flex;
+	flex-direction: row;
+	justify-content: $content;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: #{$gap}px;
+}
+
+@mixin hover() {
+	transition: all 0.3s;
+}
+
+@mixin menu-onclick() {
+	background-repeat: no-repeat;
+	background-size: 3rem;
+	cursor: pointer;
+	height: 3rem;
+	background-color: initial;
+	border: none;
+}
+
+@mixin headerFooter() {
+	background-color: var(--transparentColor);
+	box-shadow: var(--boxShadow);
+	position: fixed;
+	left: 0;
+	height: 4rem;
+	justify-content: center;
+}
+
+@mixin media {
+	@media screen and (max-width: 1024px) {
+		width: var(--sizeAll);
+		padding: 0.5rem;
+	}
+}
+
+@mixin main() {
+	gap: 16px;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 2rem;
+	@include media(); 
+}
+
+@mixin container() {
+	gap: 2rem;
+	&__title {
+		margin: 0 0 0rem 4rem;
+	}
+	&__content {
+		gap: 1rem;
+	}
+}
+
+@mixin onClickBody() {
+	background-color: var(--closeColor);
+	box-shadow: var(--boxShadow);
+	&:hover,
+	&:focus {
+		.open {
+			transition: var(--transitionAll);
+			background-image: url('../svg/expand_more_hover.svg');
+			@include onClick();
+		}
+		.close {
+			transition: var(--transitionAll);
+			background-image: url('../svg/expand_less_hover.svg');
+			@include onClick();
+		}
+	}
+}
+
+@mixin onClick() {
+	@include menu-onclick();
+	width: 3rem;
+	background-attachment: local;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 25;
+	background-color: initial;
+	position: absolute;
+}
+
+@mixin closed() {
+	overflow: hidden;
+	visibility: hidden;
+	height: 0;
+	transition: all 0.3s;
+}
+
+@mixin list() {
+	& li {
+		padding: 0.5em 0 0.5rem 2rem;
+		display: initial;
+		& p {
+			display: initial;
+		}
+		& a:hover,
+		& a:focus {
+			background-color: initial;
+		}
+		& a:focus {
+			box-shadow: var(--focusBorder);
+		}
+		& a {
+			font-size: inherit;
+			font-size: inherit !important;
+			padding: 0;
+		}
+	}
+}

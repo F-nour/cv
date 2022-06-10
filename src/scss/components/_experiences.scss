@@ -1,0 +1,13 @@
+@use './mixins';
+
+.experiences {
+	@include mixins.main();
+	& .collaps__content-text > li,
+	.CHU {
+		box-shadow: inset 0 0 2px 0 var(--bgColor);
+	}
+}
+
+.list {
+	position: relative;
+}

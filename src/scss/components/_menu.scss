@@ -1,0 +1,62 @@
+@use './mixins';
+
+.header {
+	@include mixins.headerFooter();
+	z-index: 100;
+	top: 0;
+	&-menu {
+		&__list {
+			@include mixins.flex-row(0, 0, space-evenly);
+		}
+		&__link a,
+		&__link span {
+			font-size: var(--menuFontSize);
+			padding: 0 1rem;
+		}
+	}
+}
+
+.actual a {
+		background-color: var(--linkColor);
+		color: var(--borderColor);
+		&:focus,
+		&:hover {
+			background-color: var(--focusColor); 
+			color: var(--bgColor);
+			box-shadow: inset 0 0 0 1px var(--mainColor); 
+		}
+	}
+
+.footer {
+	@include mixins.headerFooter();
+	width: var(--sizeAll);
+	bottom: 0;
+	padding: 0 0.5rem;
+	&-menu {
+		@include mixins.flex-row(3, 0, center);
+		& .download {
+			justify-content: center;
+		}
+		&__link {
+			& img {
+				width: 3rem;
+			}
+		}
+		&__social {
+			@include mixins.flex-row(0, 8, space-between);
+			&__list {
+				@include mixins.flex-row(0, 16, start);
+				flex-wrap: nowrap;
+			}
+		}
+		&__legal {
+			@include mixins.flex-row(0, 8, end);
+		}
+		& span {
+			color: var(--linkColor);
+		}
+		& * {
+			font-size: 1.3rem;
+		}
+	}
+}

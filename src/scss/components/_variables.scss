@@ -1,0 +1,25 @@
+:root {
+	--sizeAll: 100%;
+	--row: row;
+	--column: column;
+	--mainColor: hsl(36, 40%, 80%);
+	--linkColor: hsl(36, 55%, 70%);
+	--focusColor: hsl(36, 70%, 50%);
+	--borderColor: hsl(36, 10%, 25%);
+	--scrollColor: hsl(36, 10%, 15%);
+	--bgColor: hsl(36, 10%, 10%);
+	--transparentColor: hsla(36, 10%, 15%, 0.8);
+	--closeColor: hsla(36, 20%, 15%, 0.5);
+	--openColor: hsla(36, 20%, 35%, 0.3);
+	--collapsColor: hsla(36, 20%, 10%, 0.4);
+	--activeHeight: height 0.3s ease-out;
+	--activeWidth: width 0.3s ease-out;
+	--transitionAll: all 0.3s ease-out;
+	--visible: visible;
+	--menuFontSize: 2rem;
+	--boxShadow: inset 0 0 8px 0 var(--borderColor);
+	--focusBorder: 0 0 0 1px var(--focusColor);
+	--noTransition: all 0.3s;
+	--minWidthMobile: 300px;
+	--modalShadow: inset 0 0 16px 8px var(--borderColor);
+}

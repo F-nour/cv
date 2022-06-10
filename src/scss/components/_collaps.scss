@@ -1,0 +1,67 @@
+@use './mixins';
+
+.collaps {
+	width: 95%;
+	min-width: var(--minWidthMobile);
+	box-shadow: var(--boxShadow);
+	padding: 1rem 0;
+	background-color: var(--collapsColor);
+	@include mixins.media();
+	&__header {
+		align-items: center;
+		& > ul {
+			width: var(--sizeAll);
+		}
+	}
+	&__title {
+		@include mixins.onClickBody();
+		width: var(--sizeAll);
+		& > button {
+			position: relative;
+			justify-content: center;
+			padding: 0 3rem 0 .5rem;
+			z-index: 20;
+			&:hover,
+			&:focus {
+				box-shadow: none;
+				background-color: var(--openColor);
+			}
+			&:active {
+				background-color: var(--openColor);
+			}
+		}
+	}
+	&__content {
+		@include mixins.closed();
+		background: var(--closeColor);
+		flex-direction: row;
+		box-shadow: var(--boxShadow);
+		@include mixins.list();
+		& > ul li {
+			display: inherit;
+			position: relative;
+		}
+	}
+}
+
+.open {
+	background-image: url('../svg/expand_more.svg');
+	@include mixins.onClick();
+}
+
+.close {
+	background-image: url('../svg/expand_less.svg');
+	@include mixins.onClick();
+}
+
+.active,
+.active a:hover,
+.active a:focus {
+	background-color: var(--openColor);
+}
+
+.openElements {
+	position: initial;
+	z-index: initial;
+	visibility: initial;
+}

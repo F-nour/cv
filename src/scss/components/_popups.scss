@@ -1,0 +1,39 @@
+@use './mixins';
+
+.openPopup {
+	@include mixins.onClick();
+	z-index: 30;
+	background-image: url('../svg/add.svg');
+	&:hover,
+	&:focus {
+		background-image: url('../svg/add__hover.svg');
+	}
+}
+
+.top {
+	top: 8px;
+}
+
+.popup {
+	transform: scale(0);
+	position: fixed;
+	top: 15%;
+	overflow: scroll;
+	left: 5%;
+	width: 90%;
+	max-height: 70%; 
+	border-radius: 8px;
+	box-shadow: var(--modalShadow);
+	background-color: var(--bgColor);
+	padding: 32px;
+	z-index: 2000;
+	transition: all 0.3s ease-out;
+	display: flex;
+	gap: 16px;
+	@media screen and (max-width: 1024px) {
+		padding: 32px 0.5rem;
+	}
+	&.opened {
+		transform: scale(1);
+	}
+}

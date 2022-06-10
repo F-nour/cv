@@ -1,0 +1,120 @@
+@use './mixins';
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--linkColor) var(--borderColor);
+	&::-webkit-scrollbar {
+		width: 4px;
+		&-track {
+			background-color: var(--borderColor);
+		}
+		&-thumb {
+			background-color: var(--linkColor);
+			border-radius: 20px;
+			border: 1px solid var(--scrollColor);
+		}
+		&-corner {
+			background-color: var(--bgColor);
+		}
+	}
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--bgColor);
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	// background-position: center;
+	// background-attachment: fixed;
+	color: var(--mainColor);
+	margin: 4rem 0;
+	box-shadow: var(--boxShadow);
+	@media screen and (max-width: 1024px) {
+		margin: 3rem 0 0;
+	}
+}
+
+li {
+	list-style: none;
+	padding-left: 0;
+}
+
+a {
+	text-decoration: none;
+	color: var(--linkColor);
+	font-weight: 600;
+	&:focus,
+	&:hover {
+		color: var(--focusColor);
+		@include mixins.hover();
+	}
+}
+
+.shadow {
+	transition: var(--transitionAll);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 50;
+	background-color: var(--transparentColor);
+}
+
+.close-icon {
+	position: absolute;
+	background-image: url('../svg/close.svg');
+	@include mixins.menu-onclick;
+	top: 0;
+	right: 0;
+	background-position: top 0 right 8px;
+	&:hover,
+	&:focus {
+		background-image: url('../svg/close__hover.svg');
+	}
+}
+
+.build {
+	@include mixins.flex-row(0, 0, space-around);
+	&__logo {
+		min-width: 300px;
+		height: 400px;
+		// background-image: url('../svg/build.svg');
+		// background-repeat: no-repeat;
+		// background-size: cover;
+		// background-position: left;
+		// background-attachment: fixed;
+	}
+	&__text {
+		height: 400px;
+		justify-content: space-around;
+		align-items: center;
+		min-width: 150px;
+		text-align: center;
+		& span {
+			font-size: xx-large;
+			font-weight: 600;
+		}
+	}
+}
+
+.container {
+	height: 100%;
+	justify-content: space-between;
+}
+
+button {
+	padding: 0;
+	background: none;
+	border: none;
+	width: var(--sizeAll);
+	text-align: left;
+	font-weight: bold;
+	color: var(--linkColor);
+	&:focus,
+	&:hover {
+		color: var(--focusColor);
+		@include mixins.hover();
+	}
+}
