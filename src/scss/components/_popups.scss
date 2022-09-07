@@ -21,7 +21,7 @@
 	overflow: scroll;
 	left: 5%;
 	width: 90%;
-	max-height: 70%; 
+	max-height: 70%;
 	border-radius: 8px;
 	box-shadow: var(--modalShadow);
 	background-color: var(--bgColor);
@@ -35,5 +35,8 @@
 	}
 	&.opened {
 		transform: scale(1);
+	}
+	& ul, & li {
+		display: inherit;
 	}
 }

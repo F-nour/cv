@@ -41,10 +41,11 @@
 		flex-direction: row;
 		box-shadow: var(--boxShadow);
 		@include mixins.list();
-		&-text {
+		&-text, & > ul {
 			width: var(--sizeAll);
 		}
 		& li {
+			display: flex;
 			width: var(--sizeAll);
 			position: relative;
 		}

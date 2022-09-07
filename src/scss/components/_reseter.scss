@@ -263,7 +263,7 @@ template,
 [hidden] {
 	display: none;
 }
-*:not(head, script, table, tbody, tfoot, thead, tr, td, th),
+*:not(head, script, table, tbody, tfoot, thead, tr, td, th, sup),
 :after,
 :before {
 	display: flex;

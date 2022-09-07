@@ -4,6 +4,7 @@ import {
 	removeClass,
 	removeElement,
 	addClass,
+	keyEvent,
 } from '../modules/utilities.js';
 import {
 	createShadow,
@@ -38,6 +39,11 @@ const openModal = (popup) => {
 	popupFocus(popup);
 	addClass(popup, CLASSNAME.OPENED);
 	createShadow(root, () => closeModal(popup));
+	window.addEventListener('keydown', (e) => {
+		if (e.key === 'Escape') {
+			closeModal(popup)
+		}
+	})
 };
 
 export const closeModal = (popup) => {
