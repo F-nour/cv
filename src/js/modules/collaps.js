@@ -42,6 +42,7 @@ const handleCollaps = (e) => {
 		e.preventDefault();
 		linkCollaps(parentDiv);
 	} else if (e.target.tagName === 'DIV') {
+		e.preventDefault()
 		const parentDiv = e.target.parentElement;
 		linkCollaps(parentDiv);
 	}

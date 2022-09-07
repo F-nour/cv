@@ -1,4 +1,4 @@
-import { CLASSNAME, ID, STYLES } from '../modules/constants.js';
+	import { CLASSNAME, ID, STYLES } from '../modules/constants.js';
 import {
 	clickEvent,
 	removeClass,

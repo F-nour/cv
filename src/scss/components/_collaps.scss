@@ -16,6 +16,7 @@
 	&__title {
 		@include mixins.onClickBody();
 		width: var(--sizeAll);
+		display: initial;
 		& > button {
 			position: relative;
 			justify-content: center;
@@ -34,11 +35,17 @@
 	&__content {
 		@include mixins.closed();
 		background: var(--closeColor);
+		height: 0;
+		display: flex;
+		width: var(--sizeAll);
 		flex-direction: row;
 		box-shadow: var(--boxShadow);
 		@include mixins.list();
-		& > ul li {
-			display: inherit;
+		&-text {
+			width: var(--sizeAll);
+		}
+		& li {
+			width: var(--sizeAll);
 			position: relative;
 		}
 	}
