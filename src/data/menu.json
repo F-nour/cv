@@ -1,0 +1,39 @@
+[
+  {
+    "name": "accueil",
+    "path": ""
+  },
+  {
+    "name": "formations",
+    "directory": "education",
+    "path": "",
+    "subMenu": [
+      {
+        "name": "diplômes",
+        "path": "diplomas",
+      },
+      {
+        "name": "titres professionnels RNCP",
+        "path": "professional-titles"
+      },
+      {
+        "name": "formations continues",
+        "path": "continuing-education"
+      }
+    ]
+  },
+  {
+    "name": "expériences",
+    "directory": "experiences",
+    "path": ""
+  },
+  {
+    "name": "compétences",
+    "directory": "skills",
+    "path": ""
+  },
+  {
+    "name": "portfolio",
+    "path": "portfolio"
+  }
+]

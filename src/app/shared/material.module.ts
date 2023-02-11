@@ -4,9 +4,8 @@ import { CommonModule } from '@angular/common';
 
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
+  exports: [
+
   ]
 })
 export class MaterialModule { }
