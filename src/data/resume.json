@@ -1,0 +1,212 @@
+{
+  "basics": {
+    "name": "Nour-eddine FATTOUM",
+    "label": "Développeur web junior",
+    "image": "",
+    "email": "fattoumne@protonmail.com",
+    "url": "http://f-nour.github.io/cv",
+    "summary": "Développeur web Junior, et passionné d'informatique depuis mon adolescence, je travaille particulièrement sur Php, symfony, Javascript & TypeScript, en m'ouvrant sur d'autres technologies comme Java, Python ou Docker. Convaincu que le numérique est une porte ouverte pour les personnes en situation de handicap, j'attache une particulière importance à rendre mes applications accessibles à tous et toutes, en conformité avec la norme WCAG.",
+    "location": {
+      "postalCode": "33130",
+      "city": "Bègles",
+      "countryCode": "FR",
+      "region": "Nouvelle-Aquitaine"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "NourEddine_f",
+        "url": "https://twitter.com/NourEddine_F"
+      },
+      {
+        "network": "Linkedin",
+        "username": "f-nour",
+        "url": "https://www.linkedin.com/in/f-nour"
+      },
+      {
+        "network": "GitHub",
+        "username": "f-nour",
+        "url": "https://github.com/f-nour"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "MyCater",
+      "location": "Bordeaux",
+      "description": "Plateforme pour traiteurs en entreprise",
+      "position": "Développeur web Junior",
+      "url": "http://piedpiper.example.com",
+      "startDate": "2022-06-27",
+      "endDate": "2022-07-28",
+      "summary": "Développeur full-stack",
+      "highlights": [
+        "Rédaction et correction de tests unitaires en TypeScript",
+        "Optimisation des vues en implémentant des components et des variables AdonisJs",
+        "Correction de bug Javascript",
+        "Optimisation des feuilles de style SCSS en ajoutant des icônes directement aux sélecteurs"
+      ]
+    },
+    {
+      "name": "MyCater",
+      "location": "Bordeaux",
+      "description": "Plateforme pour traiteurs en entreprise",
+      "position": "Développeur web Junior",
+      "url": "http://piedpiper.example.com",
+      "startDate": "2021-11-22",
+      "endDate": "2021-12-17",
+      "summary": "Développeur front-end",
+      "highlights": [
+        "Intégration de fonctionnalités d'accessibilité au sein du code HTML, SCSS et JavaScript.",
+        "Nettoyage des feuilles de style SCSS.",
+        "Implantation d'une fonctionnalité de copie du code de la commande."
+      ]
+    },
+    {
+      "name": "Groupe Hospitalier Pellegrin",
+      "location": "Bordeaux",
+      "position": "Assistant de service social",
+      "startDate": "2018-11-18",
+      "endDate": "2020-03-31",
+      "summary": "Evaluation des situations des victimes au regard de la protection de l'enfance"
+    },
+    {
+      "name": "Groupe Hospitalier Pellegrin",
+      "location": "Bordeaux",
+      "position": "Cadre socio-éducatif",
+      "startDate": "2019-05-01",
+      "endDate": "2020-09-10",
+      "summary": "Encadrement des équipes d'assistants de service social du groupe Hospitalier Pellegrin"
+    },
+    {
+      "name": "ARC-EA",
+      "description": "Association loi 1901 d'équipes d'éducateur de rue",
+      "location": "Paris",
+      "startDate": "2016-05-01",
+      "endDate": "2018-07-13",
+      "summary": "Educateur de rue auprès des jeunes de 12 à 25 ans dans un quartier dit sensible de Paris"
+    },
+    {
+      "name": "Département de l'Essonne, de Paris et du Val de Marne",
+      "description": "Collectivités territoriales garantes de la politique sociale",
+      "location": "Ile-de-France",
+      "startDate": "2013-08-18",
+      "endDate": "2015-11-11",
+      "summary": "Assistant social de polyvalence de secteur"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Handiparentalité",
+      "position": "Bénévole",
+      "startDate": "2013-01-01",
+      "summary": "Soutien au parents porteurs de handicap et sensibilisation des pouvoirs publics"
+    }
+  ],
+  "education": [
+    {
+      "institution": "3W Academy",
+      "url": "https://www.3wa.io",
+      "area": "Développeur Intégrateur web et d'application",
+      "studyType": "Titre RNCP Niveau 5",
+      "startDate": "2022-02-10",
+      "endDate": "2022-08-08",
+      "courses": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "MySQL",
+        "PHP"
+      ]
+    },
+    {
+      "institution": "Ecole Normale Sociale",
+      "area": "Diplôme d'Etat d'Assistant de Service Social",
+      "studyType": "BAC+3",
+      "startDate": "2009-09-01",
+      "endDate": "2012-07-13"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Développement Front-end",
+      "level": "Junior",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "SCSS",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Développement Back-end",
+      "level": "Junior",
+      "keywords": [
+        "MySQL",
+        "PHP",
+        "TypeScript",
+        "java"
+      ]
+    },
+    {
+      "name": "Utilisation de Frameworks",
+      "level": "Junior",
+      "keywords": [
+        "ReactJs",
+        "Symfony",
+        "NodeJs",
+        "AdonisJs"
+      ]
+    },
+    {
+      "name": "Environnement de développement",
+      "level": "Junior",
+      "keywords": [
+        "Visual Studio Code",
+        "PhpStorm",
+        "PhpMyAdmin",
+        "Eclipse"
+      ]
+    },
+    {
+      "name": "Systèmes d'exploitation",
+      "level": "Intermédiaire",
+      "keywords": [
+        "Windows",
+        "Mac OS",
+        "Debian",
+        "Ubuntu"
+      ]
+    },
+    {
+      "name": "Outils d'accessibilité",
+      "level": "Maîtrise",
+      "keywords": [
+        "Jaws for Windows",
+        "NVDA",
+        "Orca",
+        "VoiceOver",
+        "TalkBack"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Français",
+      "fluency": "Langue maternelle"
+    },
+    {
+      "language": "Anglais",
+      "fluency": "Compréhension écrite"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Voyages",
+      "keywords": [
+        "Tunisie",
+        "Espagne"
+      ]
+    }
+  ]
+}
